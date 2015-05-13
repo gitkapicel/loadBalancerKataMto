@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Server {
 	
-	private static final double MAXIMUM_LOAD = 100.0d;
+	public static final double MAXIMUM_LOAD = 100.0d;
 	private List<Vm> vms = new ArrayList<Vm>();
 
 	public double currentLoadPecentage;
@@ -27,8 +27,8 @@ public class Server {
 	}
 	
 	public int getCapacity() {
-				return capacity;		
-			 }
+		return capacity;		
+	}
 	
 	public int vmsCount() {		
 		return vms.size();
