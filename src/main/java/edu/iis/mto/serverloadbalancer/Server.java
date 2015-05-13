@@ -17,7 +17,7 @@ public class Server {
 
 	
 	public boolean contains(Vm vm) {
-		return true;
+		return vms.contains(vm);
 	}
 	
 	public void addVm(Vm vm) {
@@ -25,6 +25,10 @@ public class Server {
 		this.currentLoadPecentage = (double) vm.size / (double) this.capacity
 				* MAXIMUM_LOAD;
 	}
+	
+	public int getCapacity() {
+				return capacity;		
+			 }
 	
 	public int vmsCount() {		
 		return vms.size();
